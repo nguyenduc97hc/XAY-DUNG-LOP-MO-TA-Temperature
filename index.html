@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+    <script>
+        function Temperature(c) {
+            this.C= c;
+            this.getF = function () {
+                return 1.8*this.C + 32;
+            }
+            this.getKan = function () {
+                return  this.C+ 273;
+            }
+        }
+         let T =new  Temperature(25);
+        let F = T.getF();
+        let K = T.getKan();
+        document.write("so do F la " + F +"<br/>");
+        document.write("so do K la " + K +"<br/>");
+
+    </script>
+</body>
+</html>
